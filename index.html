@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Authentication System</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+
+</head>
+<body>
+    <div class="container" id="home">
+        <h1>Welcome</h1>
+        <button onclick="showLogin()">Log In</button>
+        <button onclick="showSignup()">Sign Up</button>
+    </div>
+    
+    <div class="container hidden" id="login">
+        <h2>Log In</h2>
+        <input type="email" id="loginEmail" placeholder="Email" required>
+        <input type="password" id="loginPassword" placeholder="Password" required>
+        <button onclick="login()">Submit</button>
+        <button onclick="goHome()">Back</button>
+    </div>
+    
+    <div class="container hidden" id="signup">
+        <h2>Sign Up</h2>
+        <input type="text" id="signupUsername" placeholder="Username" required>
+        <input type="email" id="signupEmail" placeholder="Email" required>
+        <input type="password" id="signupPassword" placeholder="Password" required>
+        <button onclick="signup()">Submit</button>
+        <button onclick="goHome()">Back</button>
+    </div>
+    
+    <div class="container hidden" id="dashboard">
+        <h2>Account Information</h2>
+        <p id="userInfo"></p>
+        <button onclick="logout()">Log Out</button>
+    </div>
+    
+
+</body>
+</html>
